@@ -7,6 +7,10 @@
   --primary: #11ff99;
   --fg:#1f1f1f;
   --bg: #1f1f1f;
+  --jetbrains-32: 32px/1.5 'jetbrains mono','monospace';
+}
+html{
+  scroll-behavior: smooth;
 }
 
 @media (prefers-color-scheme: dark) {

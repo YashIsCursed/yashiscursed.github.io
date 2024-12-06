@@ -1,0 +1,103 @@
+.container {
+    display: flex;
+    height: 100vh;
+    width: auto;
+    justify-content: center;
+    padding-top: 24px;
+    font-family: "Jetbrains mono";
+    background-color: var(--bg);
+    color: var(--fg);
+  }
+  
+  .innerContainer {
+    width: auto;
+    max-width: 480px;
+    overflow:hidden;
+  }
+  
+  .tabList {
+    width:min-content;
+    background-color:#191919;
+    padding:0.5rem;
+    display: flex;
+    gap: 16px;
+    justify-content:space-between;
+    border-radius:20px;
+  }
+  
+  .tab {
+    border-radius: 1rem;
+    padding:0.25rem 0.5rem;
+    text-sm: 0.875rem; /* Adjust as needed */
+    line-height: 1.25; /* Adjust as needed */
+    font-semibold: 600; /* Adjust as needed */
+    color: white;
+    focus:outline-none;
+  
+    background-color: rgba(255, 255, 255, 0.1); /* Use rgba for transparency */
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms; /* Increased duration for smoother transition */
+    border:3px solid transparent;
+    &:hover{
+      border:3px solid var(--primary);
+    }
+    &:active{
+      text-decoration:underline var(--primary);
+      outline:none;
+    }
+  }
+  
+  
+  .tab:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly increased opacity on hover */
+  }
+  
+  .tab[data-selected] {
+    background-color: rgba(255, 255, 255, 0.1); /* Use rgba for transparency */
+  }
+  
+  
+  .tabPanels {
+    margin-top: 12px;
+    border-radius: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.05); /* Use rgba for transparency */
+    padding: 12px;
+  }
+  
+  .listItem {
+    position: relative;
+    border-radius: 0.375rem;
+    padding: 12px;
+    text-sm: 0.875rem; /* Adjust as needed */
+    line-height: 1.25; /* Adjust as needed */
+    transition-property: all; /* Changed to 'all' for background transition */
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms; /* Increased duration for smoother transition */
+  }
+  
+  
+  .listItem:hover {
+    background-color: rgba(255, 255, 255, 0.05); /* Use rgba for transparency */
+  }
+  
+  
+  .link {
+    font-semibold: 600; /* Adjust as needed */
+    color: white;
+  }
+  
+  
+  .linkSpan {
+    position: absolute;
+    inset: 0;
+  }
+  
+  .disc {
+    display: flex;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.5); /* Use rgba for transparency */
+    font-size: 0.875rem; /* Slightly increased size */
+    line-height: 1.25; /* Added line-height for consistency */
+    margin-top: 0.25rem; /* Added small margin-top */
+  }

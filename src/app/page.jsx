@@ -1,8 +1,13 @@
-import Image from "next/image";
+import { motion } from "framer-motion";
+import Info from "/src/component/Info/Info.jsx"
+import List from "/src/component/List/List.jsx"
+import Work from "/src/component/Work/Work.jsx"
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="bg-zinc-950">
+      <Info/>
+      <Work/>
     </div>
   );
 }

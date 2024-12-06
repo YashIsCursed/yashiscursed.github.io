@@ -1,21 +1,21 @@
 .comp{
     background-image:
-        repeating-linear-gradient(45deg,transparent 1px 2.5px,var(--bg) 5px 7.5px,transparent 10px 12.5px),
-        repeating-linear-gradient(-45deg,transparent 1px 2.5px,var(--bg) 5px 7.5px,transparent 10px 12.5px);
+        repeating-linear-gradient(45deg,transparent 1px 2.5px,var(--bg) 7.5px 10px,transparent 15px 17.5px),
+        repeating-linear-gradient(-45deg,transparent 1px 2.5px,var(--bg) 7.5px 10px,transparent 15px 17.5px),
+        repeating-linear-gradient(transparent,var(--bg));
     background: blur(1px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:0 5vw;
+    padding:0 20vw;
     margin-bottom: 5vw;
+    color:var(--fg);
     border-bottom: 3px solid var(--primary);
     box-shadow: 0 5px 20px var(--primary);
     margin-bottom: 1rem;
     backdrop-filter: blur(5px);
-    height: 70vh;
+    height: 90vh;
     animation: shadowpush 2s ease-in-out forwards;
-    position: sticky;
-    top:0;
 }
 @keyframes shadowpush {
     0%{
@@ -28,8 +28,21 @@
 }
 .name{
     display: flex;
-    gap:1rem;
-    height:auto;
+    height:50%;
+    width:100%;
+    flex-direction:column;
+    gap:1.5rem;
+    box-shadow:0px 0px 5px var(--bg);
+    justify-content:center;
+}
+.name h1{
+    font-weight:700;
+    font:var(--jetbrains-32);
+
+}
+.name svg{
+
+    margin-left:5vw;
 }
 .name svg path{
     width:50vh;

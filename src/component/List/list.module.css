@@ -1,0 +1,99 @@
+.container {
+  display: flex;
+  height: 100vh;
+  margin-top:10vh;
+  width: 100%;
+  justify-content: center;
+  padding-top: 20px;
+  background-color: var(--bg);
+    font-family: "Jetbrains Mono";
+}
+
+.wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.product {
+  font-size: 0.875rem; /* text-sm/6 */
+  font-weight: 600; /* font-semibold */
+  color: rgba(255, 255, 255, 0.5); /* text-white/50 */
+  font-family: "Jetbrains Mono";
+
+}
+
+.popoverButton {
+  display: block;
+  font-size: 0.875rem; /* text-sm/6 */
+  font-weight: 600; /* font-semibold */
+  color: rgba(255, 255, 255, 0.5); /* text-white/50 */
+  outline: none;
+    font-family: "Jetbrains Mono";
+
+}
+
+.popoverButton:focus {
+  outline: 1px solid white;
+}
+
+.popoverButton[data-active] {
+  color: white;
+}
+
+.popoverButton[data-hover] {
+  color: white;
+}
+
+
+.popoverPanel {
+  border-radius: 0.625rem; /* rounded-xl */
+  background-color: rgba(255, 255, 255, 0.05); /* bg-white/5 */
+  font-size: 0.875rem; /* text-sm/6 */
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  --anchor-gap: var(--spacing-5); /* If your design system uses this, replace by number */
+    font-family: "Jetbrains Mono";
+
+}
+
+.popoverPanel[data-closed] {
+  transform: translateY(-0.25rem);
+  opacity: 0;
+}
+
+.popoverPanel > * + * {
+  border-top-width: 1px;
+  border-top-color: rgba(255, 255, 255, 0.05);
+}
+
+
+.popoverContent {
+  padding: 0.75rem;
+}
+
+.link {
+  display: block;
+  border-radius: 0.5rem; /* rounded-lg */
+  padding: 0.5rem 0.75rem; /* py-2 px-3*/
+  transition-property: background-color;
+    font-family: "Jetbrains Mono";
+
+}
+.link:hover {
+  background-color: rgba(255, 255, 255, 0.05); /* bg-white/5 */
+}
+
+
+.linkTitle {
+  font-weight: 600; /* font-semibold */
+  color: white;
+    font-family: "Jetbrains Mono";
+
+}
+
+.linkDescription {
+  color: rgba(255, 255, 255, 0.5); /* text-white/50 */
+    font-family: "Jetbrains Mono";
+
+}
